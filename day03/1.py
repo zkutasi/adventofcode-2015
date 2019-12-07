@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 
-with open('input.txt') as f:
+import sys
+
+
+with open(sys.argv[1]) as f:
   x = 0
   y = 0
   visits = [(x,y)]

@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 
 import re
+import sys
 
 rgx = re.compile('(\d+)x(\d+)x(\d+)')
 
-with open('input.txt') as f:
+
+with open(sys.argv[1]) as f:
   summa = 0
   for line in f.readlines():
     a,b,c = [ int(i) for i in rgx.split(line)[1:-1] ]

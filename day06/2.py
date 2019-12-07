@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 
 import re
+import sys
 
 rgx = re.compile('(.*) (\d+),(\d+) through (\d+),(\d+)')
 
 grid = [ [ 0 for x in range(1000) ] for y in range(1000) ]
 
-with open('input.txt') as f:
+with open(sys.argv[1]) as f:
   for line in f.readlines():
     instr, x0,y0, x1,y1 = rgx.split(line)[1:-1]
     for x in range(int(x0), int(x1)+1):

@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import re
+import sys
 
 rgx_num = re.compile('^(\d+)$')
 rgx_val = re.compile('^(\S+) -> (\S+)$')
@@ -60,7 +61,8 @@ class Not(Instr):
 
 wires = {}
 head = None
-with open('input.txt') as f:
+
+with open(sys.argv[1]) as f:
   for line in f.readlines():
     instr = None
     match = rgx_val.match(line.strip())

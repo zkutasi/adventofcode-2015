@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
-with open('input.txt') as f:
+import sys
+
+with open(sys.argv[1]) as f:
   for line in f.readlines():
-    print "End floor: %d" % line.count('(')-line.count(')')
+    print "End floor: %d" % (line.count('(')-line.count(')'))

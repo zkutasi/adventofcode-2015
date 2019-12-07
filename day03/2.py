@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
-with open('input.txt') as f:
+import sys
+
+with open(sys.argv[1]) as f:
   sx = 0
   sy = 0
   rsx = 0

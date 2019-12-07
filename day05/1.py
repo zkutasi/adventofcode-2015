@@ -1,8 +1,11 @@
 #!/usr/bin/env python
 
+import sys
+
 nice = 0
 naughty = 0
-with open('input.txt') as f:
+
+with open(sys.argv[1]) as f:
   for line in f.readlines():
     isnice = all([
                   len([ c for c in line if c in 'aeiou' ]) >= 3,

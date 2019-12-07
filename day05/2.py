@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+import sys
+
+
 def twice(line):
   for i in range(0, len(line)-1):
     if line.count(line[i:i+2]) > 1:
@@ -15,7 +18,8 @@ def between(line):
 
 nice = 0
 naughty = 0
-with open('input.txt') as f:
+
+with open(sys.argv[1]) as f:
   for line in [ l.strip() for l in f.readlines()]:
     isnice = all([
                    twice(line),
