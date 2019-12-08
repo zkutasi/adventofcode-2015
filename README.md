@@ -41,6 +41,7 @@ These are my solutions for the Advent of Code 2015 Challenges (https://adventofc
 * Part1 was tricky as the time ticks can be implemented in various ways, and the example is not helping to test if it is OK or not
 
 ## DAY 15
+* Part1 was tricky because of the input data, some approaches became unfeasible
 
 ## DAY 16
 
