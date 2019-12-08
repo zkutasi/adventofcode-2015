@@ -50,6 +50,8 @@ These are my solutions for the Advent of Code 2015 Challenges (https://adventofc
 ## DAY 18
 
 ## DAY 19
+* Part1 is easy
+* Part2 however is very hard. I had to peek into the solutions and still unsure how this should have been approached. Used a solution from the Reddit forums about random shuffling the replacement list after stuck, it works after a while...
 
 ## DAY 20
 
