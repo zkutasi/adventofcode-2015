@@ -55,9 +55,8 @@ These are my solutions for the Advent of Code 2015 Challenges (https://adventofc
 
 ## DAY 20
 
-## DAY 20
-
 ## DAY 21
+* Great OOP game challenge, ended doing everything in OOP, was super convenient, and after ironing bugs, it was working
 
 ## DAY 22
 
